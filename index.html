@@ -369,7 +369,8 @@
     /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
       #home { grid-template-columns: 1fr; }
-      .hero-photo-panel { min-height: 55vw; order: -1; }
+      .hero-photo-panel { min-height: 110vw; max-height: 85vh; order: -1; }
+      .hero-photo { object-position: center 15%; }
       .hero-inner { padding: 40px 32px 60px; max-width: 100%; }
       .section { padding: 70px 36px; }
       .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 40px; }
@@ -382,6 +383,7 @@
     }
     @media (max-width: 600px) {
       .hero-inner { padding: 30px 20px 50px; }
+      .hero-photo-panel { min-height: 125vw; }
       .section { padding: 60px 20px; }
       nav { padding: 0 20px; }
       .news-grid { grid-template-columns: 1fr; }
